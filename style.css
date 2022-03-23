@@ -4,8 +4,9 @@
 }
 .container{
     height: 100vh;
-    width: 100vw;
-    background: rgb(63 67 84);
+    width: 100%;
+    background: rgb(24 33 70);
+    font-family:sans-serif;
 }
 header{
     display: inline-flex;
@@ -13,11 +14,13 @@ header{
 }
 .logo{
     margin-right: 80px;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 .logo img{
     display: inline-flex;
     width: 60px;
+    filter: invert(100%);
+    margin-left: 10px;
 }
 header .menu ul{
     display: inline-flex;
@@ -32,7 +35,7 @@ header .menu ul li a{
     font-size: 1.2rem;
 }
 #active a{
-    color: rgb(54, 70, 214);
+    color: rgb(121 255 255);
 }
 .singup-btn{
     position: absolute;
@@ -53,4 +56,65 @@ header .menu ul li a{
 .singup-btn span{
     display: block;
     padding: 3px 11px 3px 11px;
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 135px;
+    position: absolute;
+    color: white;
+    display: block;
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+.app-text h2{
+    position: relative;
+    font-size: 40px;
+    color: #79ffff;
+    width: 540px;
+    margin-left: 45px;
+}
+.app-text p{
+    margin: 30px 0px 33px 40px;
+    font-size: 15px;
+    width: 540px;
+    line-height: 25px; 
+    color: rgb(207, 207, 207);
+}
+.app-picture{
+    width: 50%;
+    float: right;
+}
+.app-picture img{
+    width: 90%;
+    margin-left: 70px;
+    margin-top: -40px;
+}
+.play-btn{
+    margin-left: 40px;
+    display: inline-flex;
+}
+.play-btn-inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(63 67 84), rgb(63 67 84)), radial-gradient(circle at top left, #0072ff, red);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+}
+.play-btn-inner .fa{
+    padding: 18px 0px;
+    font-size: 13px;
+    cursor: pointer;
+}
+small{
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #79ffff;;
 }
