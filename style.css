@@ -5,7 +5,7 @@
 .container{
     height: 100vh;
     width: 100vw;
-    background: rgb(5, 14, 56);
+    background: rgb(63 67 84);
 }
 header{
     display: inline-flex;
@@ -34,19 +34,23 @@ header .menu ul li a{
 #active a{
     color: rgb(54, 70, 214);
 }
-.user{
+.singup-btn{
     position: absolute;
-    top: 45px;
+    top: 40px;
     right: 40px;
-}
-.user a{
-    color: rgb(255, 255, 255);
     text-decoration: none;
+    color: white;
     font-size: 18px;
-    padding: 5px 10px 5px 10px;
+    /* padding: 5px 10px 5px 10px; */
     margin: 0px 5px 0px 5px;
-    background-color: rgb(54, 70, 214);
+    /* background-color: rgb(54, 70, 214); */
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(63 67 84), rgb(63 67 84)), radial-gradient(circle at top left, #0072ff, red);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
-#login{
-    color: rgb(0, 0, 0);
+.singup-btn span{
+    display: block;
+    padding: 3px 11px 3px 11px;
 }
